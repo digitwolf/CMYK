@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="CMYK:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/CMYK_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="CMYK/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="CMYK" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="AppEngine API" />
+          <element id="file-copy" path="D:/SDK/Google/gwt-2.5.1/gwt-servlet.jar" />
+          <element id="library" level="project" name="gwt-bootstrap-2.2.1.0" />
+        </element>
+      </element>
+      <element id="gwt-compiler-output" facet="CMYK/gwt/GWT" />
+    </root>
+  </artifact>
+</component>

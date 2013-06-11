@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="gwt-bootstrap-2.2.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/gwt-bootstrap-2.2.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/gwt-bootstrap-2.2.1.0.jar!/" />
+    </SOURCES>
+  </library>
+</component>
