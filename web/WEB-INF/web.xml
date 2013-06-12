@@ -8,13 +8,7 @@
 <servlet><servlet-name>com.mySampleApplication.MySampleApplication MySampleApplicationService</servlet-name>
     <servlet-class>com.mySampleApplication.server.MySampleApplicationServiceImpl</servlet-class></servlet>
 
-    <servlet>
-        <servlet-name>com.digitwolf.Cmyk OrdersService</servlet-name>
-        <servlet-class>com.digitwolf.server.OrdersServiceImpl</servlet-class>
-    </servlet>
+
     <servlet-mapping><servlet-name>com.mySampleApplication.MySampleApplication MySampleApplicationService</servlet-name><url-pattern>/MySampleApplication/MySampleApplicationService</url-pattern></servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>com.digitwolf.Cmyk OrdersService</servlet-name>
-        <url-pattern>/com.digitwolf.Cmyk/OrdersService</url-pattern>
-    </servlet-mapping>
+
 </web-app>

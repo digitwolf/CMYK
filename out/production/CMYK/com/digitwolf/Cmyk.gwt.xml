@@ -2,10 +2,20 @@
         "http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd">
 <module>
 
+    <inherits name="com.google.gwt.inject.Inject"/>
+
     <inherits name='com.google.gwt.user.User'/>
     <inherits name="com.github.gwtbootstrap.Bootstrap" />
+    <inherits name="com.google.gwt.place.Place"/>
+
+    <inherits name="net.customware.gwt.dispatch.Dispatch" />
+    <inherits name="net.customware.gwt.presenter.Presenter" />
+    <inherits name="com.allen_sauer.gwt.log.gwt-log-DEBUG" />
 
     <entry-point class='com.digitwolf.client.Cmyk'/>
     <servlet path="/OrdersService" class="com.digitwolf.server.OrdersServiceImpl"/>
     <set-property name="bootstrap.responsiveDesign" value="true"/>
+
+    <source path='client'/>
+    <source path='shared'/>
 </module>

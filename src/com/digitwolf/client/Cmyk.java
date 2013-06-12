@@ -1,7 +1,9 @@
 package com.digitwolf.client;
 
-import com.digitwolf.client.views.MenuView;
+import com.digitwolf.client.modules.client.CmykWidgetGinjector;
+import com.digitwolf.client.view.MenuView;
 import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.ui.*;
 
 /**
@@ -12,9 +14,15 @@ import com.google.gwt.user.client.ui.*;
  * To change this template use File | Settings | File Templates.
  */
 public class Cmyk implements EntryPoint {
-    public void onModuleLoad() {
-        final MenuView menuView = new MenuView();
+    private final CmykWidgetGinjector injector = GWT.create(CmykWidgetGinjector.class);
 
-        RootPanel.get("menu").add(menuView);
+    public void onModuleLoad() {
+        //RootPanel.get().add(injector.getMainView());
+
+        final AppPresenter appPresenter = injector.getAppPresenter();
+        appPresenter.go(RootPanel.get());
+
+        // goes to the place represented on url, or the default place
+//        injector.getPlaceHistoryHandler().handleCurrentHistory();
     }
 }
